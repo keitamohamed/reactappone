@@ -42,7 +42,7 @@ class App extends Component {
               </p>
               {/*When using a arrow function, this implicitly adds a return keyword in front*/}
               {/*of the code which come directly after the arrow*/}
-              <button onClick={() => this.switchNameHandler('Tarnue!!')}>Switch Name</button>
+              <button className={'Button'} onClick={() => this.switchNameHandler('Tarnue!!')}>Switch Name</button>
               <Person
                   name = {this.state.persons[0].name}
                   age = {this.state.persons[0].age} />
