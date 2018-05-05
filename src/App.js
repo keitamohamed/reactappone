@@ -14,15 +14,23 @@ class App extends Component {
         otherState: 'Some other value'
     };
 
-    switchNameHandler = () => {
+    switchNameHandler = (newName) => {
         // console.log("was click!");
         // Do Not Do This: this.state.person[0].name = "John";
         this.setState({persons: [
-            {name: "Peter", age: 45},
+            {name: newName, age: 45},
             {name : "Smith", age: 17},
             {name: "Ashely", age: 21},
             {name: "John", age: 32}
         ]})
+    };
+
+    nameChangeHandler = (event) => {
+        this.setState({persons: [
+                {name: 'Max', age: 28},
+                {name : event.target.value, age: 17},
+                {name: "Stephanie", age: 16}
+            ]})
     };
 
   render() {
@@ -32,11 +40,22 @@ class App extends Component {
               <p>Hey, my name is Mohamed Keita and I am a React App developer.
                   Programming is great for any one.
               </p>
-              <button onClick={this.switchNameHandler}>Switch Name</button>
-              <Person name = {this.state.persons[0].name} age = {this.state.persons[0].age} />
-              <Person name = {this.state.persons[1].name} age = {this.state.persons[1].age} > My hobbies: Gaming, Dancing, and Running </Person>
-              <Person name = {this.state.persons[2].name} age = {this.state.persons[2].age}/>
-              <Person name = {this.state.persons[3].name} age = {this.state.persons[3].age}/>
+              {/*When using a arrow function, this implicitly adds a return keyword in front*/}
+              {/*of the code which come directly after the arrow*/}
+              <button onClick={() => this.switchNameHandler('Tarnue!!')}>Switch Name</button>
+              <Person
+                  name = {this.state.persons[0].name}
+                  age = {this.state.persons[0].age} />
+              <Person
+                  name = {this.state.persons[1].name}
+                  age = {this.state.persons[1].age}
+                  // Commonly use this method insted of {() => this.switchNameHandler('Tarnue')}
+                  click = {this.switchNameHandler.bind(this, 'Hassan')}
+                  changed = {this.nameChangeHandler} > My hobbies: Gaming, Dancing, and Running </Person>
+              <Person
+                  name = {this.state.persons[2].name}
+                  age = {this.state.persons[2].age}/>
+
           </div>
       );
   }

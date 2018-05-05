@@ -18,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+            <state relative-caret-position="375">
+              <caret line="56" column="53" lean-forward="true" selection-start-line="56" selection-start-column="53" selection-end-line="56" selection-end-column="53" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -42,11 +42,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Person.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Person.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Person/Person.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="207">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+              <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -68,8 +68,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/Person.js" />
-        <option value="$PROJECT_DIR$/src/Person/Person.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/Person/Person.js" />
       </list>
     </option>
   </component>
@@ -97,8 +97,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="106" />
-    <option name="y" value="90" />
+    <option name="x" value="114" />
+    <option name="y" value="169" />
     <option name="width" value="2021" />
     <option name="height" value="1277" />
   </component>
@@ -180,7 +180,7 @@
       <workItem from="1525481979794" duration="1112000" />
       <workItem from="1525484042844" duration="260000" />
       <workItem from="1525489655166" duration="1734000" />
-      <workItem from="1525535169909" duration="3562000" />
+      <workItem from="1525535169909" duration="7608000" />
     </task>
     <task id="LOCAL-00001" summary="Added a person class">
       <created>1525536100145</created>
@@ -189,11 +189,18 @@
       <option name="project" value="LOCAL" />
       <updated>1525536100145</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Working with state and props. Both props and state changes trigger a render update.&#10;&#10;Use state to store the data your current page needs in your controller-view.&#10;&#10;Use props to pass data &amp; event handlers down to your child components.&#10;&#10;These lists should help guide you when working with data in your components.&#10;&#10;Props&#10;&#10;  are immutable&#10;  which lets React do fast reference checks&#10;  are used to pass data down from your view-controller&#10;  your top level component&#10;  have better performance&#10;  use this to pass data to child components&#10;&#10;&#10;State&#10;&#10;   should be managed in your view-controller&#10;   your top level component&#10;   is mutable&#10;   has worse performance&#10;   should not be accessed from child components&#10;   pass it down with props instead">
+      <created>1525539130742</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1525539130742</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11908000" />
+    <option name="totallyTimeSpent" value="15954000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="71" y="60" width="1347" height="851" extended-state="0" />
@@ -254,7 +261,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="Added a person class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a person class" />
+    <MESSAGE value="Working with state and props. Both props and state changes trigger a render update.&#10;&#10;Use state to store the data your current page needs in your controller-view.&#10;&#10;Use props to pass data &amp; event handlers down to your child components.&#10;&#10;These lists should help guide you when working with data in your components.&#10;&#10;Props&#10;&#10;  are immutable&#10;  which lets React do fast reference checks&#10;  are used to pass data down from your view-controller&#10;  your top level component&#10;  have better performance&#10;  use this to pass data to child components&#10;&#10;&#10;State&#10;&#10;   should be managed in your view-controller&#10;   your top level component&#10;   is mutable&#10;   has worse performance&#10;   should not be accessed from child components&#10;   pass it down with props instead" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working with state and props. Both props and state changes trigger a render update.&#10;&#10;Use state to store the data your current page needs in your controller-view.&#10;&#10;Use props to pass data &amp; event handlers down to your child components.&#10;&#10;These lists should help guide you when working with data in your components.&#10;&#10;Props&#10;&#10;  are immutable&#10;  which lets React do fast reference checks&#10;  are used to pass data down from your view-controller&#10;  your top level component&#10;  have better performance&#10;  use this to pass data to child components&#10;&#10;&#10;State&#10;&#10;   should be managed in your view-controller&#10;   your top level component&#10;   is mutable&#10;   has worse performance&#10;   should not be accessed from child components&#10;   pass it down with props instead" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/package.json" />
@@ -667,20 +675,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Person/Person.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        <state relative-caret-position="375">
+          <caret line="56" column="53" lean-forward="true" selection-start-line="56" selection-start-column="53" selection-end-line="56" selection-end-column="53" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Person/Person.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
         </state>
       </provider>
     </entry>
